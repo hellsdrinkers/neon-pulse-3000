@@ -1,51 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEON PULSE 3000 - F-Zero Prototype</title>
-    <link rel="stylesheet" href="src/style.css">
-    <!-- Import Map para carregar Three.js sem bundler adicional se preferir -->
-    <script type="importmap">
-    {
-        "imports": {
-            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-        }
-    }
-    </script>
-</head>
-
-<body>
-    <div id="canvas-container"></div>
-
-    <!-- HUD Overlay -->
-    <div id="hud">
-        <div class="hud-panel energy-panel">
-            <div class="hud-label">SISTEMA DE ENERGIA / BOOST</div>
-            <div class="bar-container">
-                <div id="energy-bar" class="bar-fill"></div>
-            </div>
-        </div>
-
-        <div class="hud-panel speed-panel">
-            <div id="speed-text">000</div>
-            <div class="speed-unit">KM/H</div>
-        </div>
-    </div>
-
-    <!-- Panel de Debug (F3) -->
-    <div id="debug-overlay" class="hidden">
-        <h3>🔧 ENGINE DEBUG (F3)</h3>
-        <p>FPS: <span id="debug-fps">60</span></p>
-        <p>Velocidade: <span id="debug-speed">0</span> km/h</p>
-        <p>Posição: <span id="debug-pos">0, 0, 0</span></p>
-        <p>Altura Raycast: <span id="debug-hover">0.00</span>m</p>
-        <p>Estado do Grid: <span id="debug-state">NORMAL</span></p>
-    </div>
-
-    <script type="module" src="src/main.js"></script>
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>neon-pulse-3000</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
